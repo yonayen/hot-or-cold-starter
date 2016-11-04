@@ -25,8 +25,8 @@ var distance = null;
 var previousDistance = null;
 
 function getGuess() {
-    $("#submit").click(game);
-    $("#guess").keydown(function (enter) {
+    $("#guessButton").click(game);
+    $("#userGuess").keydown(function (enter) {
         if (enter.keyCode == 13) {
             game();
         }
